@@ -17,6 +17,9 @@ export default function TokenBtn() {
   return (
     <>
       <div className="flex items-center w-full flex-col  ">
+
+        
+
         {token && (
           <div className="bg-transparent w-full border border-gray-700 !py-2 !px-4 rounded-4xl !mb-4">
             <code>{token}</code>
@@ -30,7 +33,7 @@ export default function TokenBtn() {
           <pre>generate token</pre>
         </button>
 
-        <div className="fixed bottom-6">
+        <div className="fixed bottom-[70px]">
           <p className="text-gray-400 text-sm text-wrap max-[447px]:px-[20px] !py-[5px] !px-[10px] border border-gray-600 backdrop-blur-3xl rounded-3xl bg-gradient-to-br from-gray-600  to-black">
             copy token and do not share
           </p>

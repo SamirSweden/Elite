@@ -31,7 +31,7 @@ const LoginPage = () => {
           <div className="flex items-center justify-center h-full ">
             <div className="max-w-[400px] w-full">
               
-
+        
               <input
                 value={token}
                 onChange={(e) => setToken(e.target.value)}
