@@ -29,7 +29,7 @@ const cards = [
         price:"2000",
         conc:"16 concurrents",
         duration:"26000 sec. max  duration",
-        api:"API included",
+        api:" API included",
         days: "15 pentests/day",
         leak: "20.000 leak results/day",
         info: "Large staging environments and long‑running campaigns."

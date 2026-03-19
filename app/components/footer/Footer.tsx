@@ -15,13 +15,13 @@ export default function Footer() {
             </Link>
             <ul className="flex items-center gap-4">
                 <li>
-                    <Link href={'/plans'} className="text-gray-500 text-sm capitalize cursor-pointer">plans</Link>
+                    <Link href={'/plans'} className="text-gray-500 text-sm capitalize cursor-pointer hover:text-white">plans</Link>
                 </li>
                  <li>
-                    <Link href={'/blog'} className="text-gray-500 text-sm capitalize cursor-pointer">blog</Link>
+                    <Link href={'/blog'} className="text-gray-500 text-sm capitalize cursor-pointer hover:text-white">blog</Link>
                 </li>
                  <li>
-                    <Link href={'/contact'} className="text-gray-500 text-sm capitalize cursor-pointer">contacts</Link>
+                    <Link href={'/contact'} className="text-gray-500 text-sm capitalize cursor-pointer hover:text-white">contacts</Link>
                 </li>
             </ul>
           </div>
