@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 
 const links = [
   { label: "pricing", href: "/plans" },
-  { label: "blog", href: "/blog" },
+  { label: "info", href: "/info" },
   { label: "Get in touch", href: "/login" },
 ];
 
