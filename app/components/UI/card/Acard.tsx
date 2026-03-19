@@ -24,7 +24,7 @@ export default function Acard() {
           key={d.id}
           className="bg-gradient-to-br from-black to-violet-600 backdrop-blur-xl !p-[40px] rounded-3xl "
         >
-            <h3 className="text-gray-500 text-3xl !mb-[20px] font font-black max-[434px]:text-lg uppercase ">{d.title}</h3>
+            <h3 className="text-gray-500 text-2xl !mb-[20px] font font-extralight max-[434px]:text-lg uppercase ">{d.title}</h3>
             <p className="text-gray-400 backdrop-blur-3xl border !py-[30px] !px-[20px] rounded-xl border-gray-800 h-[150px] leading-5 max-[395px]:h-[200px] max-[395px]:text-wrap ">{d.info}</p>
         </div>
       ))}

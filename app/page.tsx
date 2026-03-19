@@ -7,11 +7,11 @@ import Plan from "./components/plans/Plan";
 export default function Home() {
   return (
     <>
-      <Header />
-      <Banner />
-      <Plan />
-      <About />
-      <Footer />
+        <Header />
+        <Banner />
+        <Plan />
+        <About />
+        <Footer />
     </>
   );
 }

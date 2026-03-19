@@ -4,6 +4,8 @@ import { useState } from "react";
 import { ShoppingCart, User, X, Menu, Bitcoin } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+
 
 const links = [
   { label: "pricing", href: "/plans" },
@@ -14,6 +16,8 @@ const links = [
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter()
+
   return (
     <>
       <header className="!bg-transparent header ">
@@ -47,7 +51,7 @@ const Header = () => {
               <button className={`cursor-pointer text-white `}>
                 <ShoppingCart size={20} />
               </button>
-              <button>
+              <button onClick={() => router.push('/login')} className="cursor-pointer">
                 <User size={20} />
               </button>
             </div>
@@ -78,7 +82,7 @@ const Header = () => {
                 ))}
               </ul>
               <div className="header__apps  flex items-center justify-center fixed bottom-4 left-0 w-full mx-3 ">
-                <button
+                <button onClick={() => router.push('/login')}
                   className={`header__mobile__btn w-full rounded-2xl capitalize font-medium text-wrap text-white hover:bg-blue-600   bg-violet-600`}
                 >
                   new account

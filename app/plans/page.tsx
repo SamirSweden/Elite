@@ -1,5 +1,7 @@
-"use client";
+'use client'
 
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 import Header from "../components/header/Header";
 import Plan from "../components/plans/Plan";
 import Card from "../components/UI/card/Card";
@@ -123,6 +125,13 @@ const cards = [
 ];
 
 const PlanPage = () => {
+  const router = useRouter()
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if(!token) router.push("/login")
+  },[])
+
   return (
     <>
     <Header />
