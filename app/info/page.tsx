@@ -1,16 +1,11 @@
 'use client'
 
-import Footer from "../components/footer/Footer"
-import Header from "../components/header/Header"
 import InfoCard from "../components/UI/card/InfoCard"
 import Nav from "../components/UI/nav/Nav"
 
 
 
 export default function InfoPage(){
-
-
-    
     return (
         <>
         
@@ -27,7 +22,7 @@ export default function InfoPage(){
                 </div>
             </section>
 
-           
+            
 
             <style jsx>{`
                 .container{

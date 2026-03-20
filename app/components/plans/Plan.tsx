@@ -2,7 +2,7 @@ import  Link  from "next/link";
 import Card from "../UI/card/Card";
 import { ArrowUpRight } from "lucide-react";
 
-const Plan = () => {
+const Plan = ({ onClose } : {onClose: () => void}) => {
   return (
     <>
       <section className="bg-transparent">

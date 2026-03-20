@@ -5,12 +5,13 @@ import { ShoppingCart, User, X, Menu, Bitcoin } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
+import DeskBtn from "../UI/btn/DeskBtn";
 
 
 const links = [
   { label: "pricing", href: "/plans" },
   { label: "info", href: "/info" },
-  { label: "Get in touch", href: "/login" },
+  { label: "crypto", href: "/crypto" },
 ];
 
 const Header = () => {
@@ -47,14 +48,19 @@ const Header = () => {
                 );
               })}
             </ul>
-            <div className="header__apps flex items-center gap-2">
+            
+
+            {pathname !== '/panel' && (
+              <div className="header__apps flex items-center gap-2">
               <button className={`cursor-pointer text-white `}>
                 <ShoppingCart size={20} />
               </button>
               <button onClick={() => router.push('/login')} className="cursor-pointer">
                 <User size={20} />
               </button>
+              <DeskBtn />
             </div>
+            )}
 
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -81,12 +87,15 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-              <div className="header__apps  flex items-center justify-center fixed bottom-4 left-0 w-full mx-3 ">
+              <div className="header__apps  flex flex-col gap-[10px] items-center justify-center fixed bottom-7 left-0 w-full mx-3 ">
                 <button onClick={() => router.push('/login')}
-                  className={`header__mobile__btn w-full rounded-2xl capitalize font-medium text-wrap text-white hover:bg-blue-600   bg-violet-600`}
+                  className={`header__mobile__btn w-full rounded-2xl capitalize font-medium text-wrap text-white bg-blue-600   hover:bg-black`}
                 >
                   new account
                 </button>
+                <button onClick={() => router.push('/plans')} className="panel backdrop-blur-lg border border- !py-[8px] !px-[30px] cursor-pointer  w-full rounded-xl text-white ">
+                panel
+              </button>
               </div>
             </div>
           </div>
@@ -109,7 +118,7 @@ const Header = () => {
             width: 0;
             left: 0;
             height: 2px;
-            bottom: -18px;
+            bottom: -28px;
             background: cyan;
             transition: width 0.4s ease;
           }
