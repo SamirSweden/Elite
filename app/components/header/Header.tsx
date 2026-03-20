@@ -11,7 +11,6 @@ import DeskBtn from "../UI/btn/DeskBtn";
 const links = [
   { label: "pricing", href: "/plans" },
   { label: "info", href: "/info" },
-  { label: "crypto", href: "/crypto" },
 ];
 
 const Header = () => {
@@ -71,7 +70,8 @@ const Header = () => {
 
             <div
               className={`${isOpen ? "translate-x-0" : "translate-x-full"} 
-                    flex items-center justify-center  flex-col fixed left-0 z-40 backdrop-blur-3xl bg-transparent transition-transform duration-300
+                    flex items-center justify-center  flex-col fixed left-0 z-40 backdrop-blur-3xl
+                     bg-transparent transition-transform duration-300
                     inset-0 
                             `}
             >
