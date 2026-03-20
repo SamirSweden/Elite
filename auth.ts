@@ -10,7 +10,6 @@ export const authOptions: NextAuthOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        // твоя логика проверки
         return null
       },
     }),
