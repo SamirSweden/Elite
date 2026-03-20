@@ -55,10 +55,10 @@ const Panel = () => {
             </ul>
               
             <Link
-              href={"/crypto"}
+              href={"/methods"}
               className="max-[520px]:hidden  bg-gradient-to-br from-[#a90b74] to-[#1d30db] rounded-4xl !py-[15px] !px-[20px]"
             >
-              crypto
+              methods
             </Link>
 
            
@@ -70,14 +70,14 @@ const Panel = () => {
             </button>
 
             <div
-              className={`${isOpen ? "translate-x-0" : "translate-x-full"} flex items-center flex-col justify-center fixed left-0 z-40 backdrop-blur-sm inset-0 bg-transparent transition-transform duration-500`}
+              className={`${isOpen ? "translate-x-0" : "translate-x-full"} flex items-center flex-col justify-center fixed left-0 z-40 backdrop-blur-lg inset-0 bg-transparent transition-transform duration-500`}
             >
               <ul className="flex flex-col items-center gap-3">
                 {links.map((l) => (
                   <li key={l.href}>
                     <Link
                       href={l.href}
-                      className="text-gray-400 font-medium capitalize border-none outline-none text-2xl"
+                      className="text-white font-medium capitalize border-none outline-none text-2xl"
                     >
                       {l.label}
                     </Link>
@@ -86,10 +86,10 @@ const Panel = () => {
               </ul>
               <div className="flex items-center fixed bottom-7 right-0 w-full ">
                 <Link
-                  href={"/crypto"}
-                  className="min-[520px]:hidden w-full !mx-[20px] text-center bg-gradient-to-br from-[#a90b74] to-[#1d30db] rounded-4xl !py-[15px] !px-[20px]"
+                  href={"/methods"}
+                  className="min-[520px]:hidden font-mono uppercase w-full !mx-[20px] text-center bg-gradient-to-br from-[#a90b74] to-[#1d30db] rounded-4xl !py-[15px] !px-[20px]"
                 >
-                  crypto
+                  methods
                 </Link>
               </div>
             </div>

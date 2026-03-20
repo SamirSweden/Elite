@@ -70,7 +70,7 @@ const Header = () => {
 
             <div
               className={`${isOpen ? "translate-x-0" : "translate-x-full"} 
-                    flex items-center justify-center  flex-col fixed left-0 z-40 backdrop-blur-3xl
+                    flex items-center justify-center  flex-col fixed left-0 z-40 backdrop-blur-md
                      bg-transparent transition-transform duration-300
                     inset-0 
                             `}
@@ -87,13 +87,13 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-              <div className="header__apps  flex flex-col gap-[10px] items-center justify-center fixed bottom-7 left-0 w-full mx-3 ">
+              <div className="header__apps  flex flex-col gap-[10px] !px-5 items-center justify-center fixed bottom-7 left-0 w-full mx-3 ">
                 <button onClick={() => router.push('/login')}
-                  className={`header__mobile__btn w-full rounded-2xl capitalize font-medium text-wrap text-white bg-blue-600   hover:bg-black`}
+                  className={`header__mobile__btn w-full rounded-2xl   capitalize font-medium text-wrap text-white bg-blue-600   hover:bg-black`}
                 >
                   new account
                 </button>
-                <button onClick={() => router.push('/plans')} className="panel backdrop-blur-lg border border- !py-[8px] !px-[30px] cursor-pointer  w-full rounded-xl text-white ">
+                <button onClick={() => router.push('/panel')} className="panel  backdrop-blur-lg border border- !py-[8px] !px-[30px] cursor-pointer  w-full rounded-xl text-white ">
                 panel
               </button>
               </div>
