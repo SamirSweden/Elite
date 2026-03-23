@@ -1,7 +1,13 @@
+import { Home } from "lucide-react";
+import Link from "next/link";
+
 const AboutCard = () => {
   return (
     <>
-      <div className="bg-white rounded-2xl border !mt-[100px] max-[542px]:mt-0   !py-[40px] !px-[20px] sm:px-10 w-[760px] ">
+      <div className="bg-white rounded-2xl border !mt-[100px] max-[542px]:mt-0   !py-[40px] !px-[20px] sm:px-10 w-[760px] relative">
+        <Link  href={'/'} className="text-black absolute top-[-15px] right-0 ">
+            <Home size={30} />
+        </Link>
         <div >
           <p className="text-gray-500 text-lg font-mono !mb-[20px] text-wrap">
             <span className="text-xl text-black font-extrabold font-semibold">

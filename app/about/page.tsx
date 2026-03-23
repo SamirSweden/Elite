@@ -1,6 +1,5 @@
 "use client";
 
-import Header from "../components/header/Header";
 import AboutCard from "../components/UI/aboutC/AboutCard";
 
 const About = () => {
