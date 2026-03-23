@@ -135,7 +135,7 @@ const PlanPage = () => {
   return (
     <>
     <Header />
-      <section className="!py-[100px] min-h-screen bg-gradient-to-br from-[#0d04bd4c] to-[#190101]">
+      <section className="!py-[100px] min-h-screen bg-gradient-to-br from-[#05032e4c] via-[#1f1b1b] to-[#031c81]">
         <div className="container">
                 <div className="bg-transparent shadow-2xl  backdrop-blur-3xl grid grid-cols-3 gap-6 max-[768]:grid-cols-1 max-[768]:w-full max-[768]:gap-8">
                 {cards.map((card) => (
