@@ -24,7 +24,7 @@ const LoginPage = () => {
     if (res.ok) {
       document.cookie = `token=${token};path=/`;
 
-      router.push("/panel")
+      router.push("/crypto")
       
     } else {
       toast.error("invalid token");

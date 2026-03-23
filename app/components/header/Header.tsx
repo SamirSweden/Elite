@@ -50,7 +50,7 @@ const Header = () => {
             </ul>
             
 
-            {pathname !== '/panel' && (
+            {pathname !== '/crypto' && (
               <div className="header__apps flex items-center gap-2">
               <button className={`cursor-pointer text-white `}>
                 <ShoppingCart size={20} />
@@ -94,8 +94,8 @@ const Header = () => {
                 >
                   new account
                 </button>
-                <button onClick={() => router.push('/panel')} className="panel  backdrop-blur-lg border border- !py-[8px] !px-[30px] cursor-pointer  w-full rounded-xl text-white ">
-                panel
+                <button onClick={() => router.push('/crypto')} className="panel  backdrop-blur-lg border border- !py-[8px] !px-[30px] cursor-pointer  w-full rounded-xl text-white ">
+                crypto
               </button>
               </div>
             </div>
