@@ -1,7 +1,7 @@
 const AboutCard = () => {
   return (
     <>
-      <div className="bg-white rounded-2xl border  !py-[40px] !px-[20px] sm:px-10 w-full max-w-[760px] mx-auto">
+      <div className="bg-white rounded-2xl border !mt-[100px] max-[542px]:mt-0   !py-[40px] !px-[20px] sm:px-10 w-[760px] ">
         <div >
           <p className="text-gray-500 text-lg font-mono !mb-[20px] text-wrap">
             <span className="text-xl text-black font-extrabold font-semibold">
@@ -15,24 +15,19 @@ const AboutCard = () => {
             testing & cybersecurity tools to individuals, developers, and
             companies focused on performance, uptime, and security.
           </p>
-          <p className="text-gray-500 text-lg font-mono !mb-[40px] text-wrap">
-            Our platform is trusted by thousands of users worldwide to simulate
-            high‑traffic scenarios, identify infrastructure weaknesses, and
-            ensure maximum availability. We champion ethical, controlled tools
-            that prepare teams for real‑world surges and threats.
-          </p>
+         
         </div>
         <div>
           <h3 className="capitalize !mb-5 font-bold text-2xl sm:text-3xl text-black ">
             &mdash; Our Mission
           </h3>
-          <p className="text-gray-500 text-lg font-mono !mb-[40px] text-wrap">
+          <p className="text-gray-500 text-lg font-mono !mb-[40px] text-wrap max-[560px]:font-medium">
             Every digital product deserves to operate under pressure. We empower
             developers and businesses with robust, easy‑to‑use testing
             instruments based on industry best practices.
           </p>
         </div>
-        <div className="bg-gradient-to-br from-[#664444] via-[#e4c882] to-[#111] !px-[30px] !py-[20px] rounded-3xl ">
+        {/* <div className="bg-gradient-to-br from-[#664444] via-[#e4c882] to-[#111] !px-[30px] !py-[20px] rounded-3xl ">
           <h3 className="capitalize !mb-5 font-bold text-2xl sm:text-3xl text-black  ">
             Company Information  &mdash;  
           </h3>
@@ -77,7 +72,7 @@ const AboutCard = () => {
             </div>
 
           </ul>
-        </div>
+        </div> */}
       </div>
     </>
   );

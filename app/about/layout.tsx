@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 
 export default function AboutLayout({children} : {children: React.ReactNode}){
-    return <div>{children}</div>
+    return <div className="!bg-[#e6e3e3]">{children}</div>
 }
 
 
