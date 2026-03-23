@@ -51,7 +51,7 @@ const Card = () => {
                         <div className="!mt-3 !mb-4 ">
                             <p className="text-gray-600 text-sm">Up to 80 Gb/s and over 200k rq/s</p>
                             <div className="flex items-center w-full !py-[10px] px-0">
-                                <button className="w-full text-center text-lg !py-[14px] !px-[40px] hover:bg-black hover:text-white rounded-xl capitalize text-black bg-white/100 cursor-pointer border-none outline-none">purchase</button>
+                                <button className=" hover:-translate-y-3 transition-all duration-300  w-full  text-center text-lg !py-[14px] !px-[40px] hover:bg-white/55 hover:text-white rounded-xl capitalize text-black bg-white/100 cursor-pointer border-none outline-none">purchase</button>
                             </div>
                         </div>
                         <hr className="text-gray-600 " />

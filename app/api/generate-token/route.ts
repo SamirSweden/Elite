@@ -1,20 +1,10 @@
 import { NextResponse } from "next/server";
+import crypto from "crypto"
 
 
+export async function GET(){
+    const token =  crypto.randomBytes(16).toString("hex");
 
-
-export async function POST(){
-    const token = crypto.randomUUID() 
 
     return NextResponse.json({ token })
 }
-
-
-
-
-
-
-
-
-
-

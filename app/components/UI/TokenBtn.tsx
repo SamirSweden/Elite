@@ -1,18 +1,32 @@
 "use client";
 
 import { useState } from "react";
+import { toast } from "sonner";
+
+
 
 export default function TokenBtn() {
   const [token, setToken] = useState("");
 
-  const handleGenerate = async () => {
-    const res = await fetch("/api/generate-token", {
-      method: "POST",
-    });
+  // const handleGenerate = async () => {
+  //   const res = await fetch("/api/generate-token", {
+  //     method: "POST",
+  //   });
 
-    const data = await res.json();
+  //   const data = await res.json();
+  //   setToken(data.token);
+  // };
+
+
+  const getToken = async () => {
+    const res = await fetch("/api/generate-token");
+
+    console.log("STATUS:", res.status);
+    const data = await res.json()
+
     setToken(data.token);
-  };
+    toast.success("Token generated!");
+  }
 
   return (
     <>
@@ -28,7 +42,7 @@ export default function TokenBtn() {
 
         <button
           className="bg-gradient-to-br w-full !mb-[20px]  from-[#0073E5] to-[#3e00e9] !py-[30px] px-[100px] rounded-4xl cursor-pointer"
-          onClick={handleGenerate}
+          onClick={getToken}
         >
           <pre>generate token</pre>
         </button>

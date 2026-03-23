@@ -1,3 +1,5 @@
+'use client'
+
 import  Link  from "next/link";
 import Card from "../UI/card/Card";
 import { ArrowUpRight } from "lucide-react";

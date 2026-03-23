@@ -12,12 +12,20 @@ const LoginPage = () => {
   const handleLogin = async () => {
     const res = await fetch("/api/verify-token", {
       method: "POST",
+      headers:{
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({ token }),
     });
 
+    console.log(res.status);
+    
+
     if (res.ok) {
-      localStorage.setItem("token", token);
-      router.push("/panel");
+      document.cookie = `token=${token};path=/`;
+
+      router.push("/panel")
+      
     } else {
       toast.error("invalid token");
     }

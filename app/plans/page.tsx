@@ -135,11 +135,11 @@ const PlanPage = () => {
   return (
     <>
     <Header />
-      <section className="!py-[100px] min-h-screen bg-gradient-to-br from-black to-[#23223a]">
+      <section className="!py-[100px] min-h-screen bg-gradient-to-br from-[#0d04bd4c] to-[#190101]">
         <div className="container">
                 <div className="bg-transparent shadow-2xl  backdrop-blur-3xl grid grid-cols-3 gap-6 max-[768]:grid-cols-1 max-[768]:w-full max-[768]:gap-8">
                 {cards.map((card) => (
-                    <div key={card.id} className="!p-6 rounded-2xl backdrop-blur-3xl shadow-lg bg-transparent border border-gray-700">
+                    <div key={card.id} className="!p-6 rounded-2xl backdrop-blur-3xl shadow-lg bg-transparent border border-gray-400">
                         <div className="!p-6 rounded-2xl !backdrop-blur-3xl shadow-lg bg-gradient-to-br from-black to-blue-800 border border-gray-800">
                             <h3 className="text-white text-lg !mb-3 capitalize font-medium">{card.title}</h3>
                             <h3 className="text-white text-4xl ">${card.price}/<span className="text-sm text-gray-500">mo</span></h3>
@@ -147,7 +147,7 @@ const PlanPage = () => {
                         <div className="!mt-3 !mb-4 ">
                             <p className="text-gray-600 text-sm">{card.power}</p>
                             <div className="flex items-center w-full !py-[10px] px-0">
-                                <button className="w-full text-center text-lg !py-[14px] !px-[40px] hover:bg-black hover:text-white rounded-xl bg-gradient-to-br from-yellow-600 to-black capitalize text-black  cursor-pointer border-none outline-none">purchase</button>
+                                <button className=" trantition-all duration-300 transform hover:-translate-y-3 hover:shadow-2xl w-full text-center text-lg !py-[14px] !px-[40px] hover:bg-white/40 hover:text-black rounded-xl bg-gradient-to-br from-[#eceaea] to-[#9fabc6] capitalize text-black  cursor-pointer border-none outline-none">purchase</button>
                             </div>
                         </div>
                         <hr className="text-gray-600 " />

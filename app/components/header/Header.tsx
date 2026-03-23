@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useState } from "react";
 import { ShoppingCart, User, X, Menu, Bitcoin } from "lucide-react";
@@ -11,6 +11,7 @@ import DeskBtn from "../UI/btn/DeskBtn";
 const links = [
   { label: "pricing", href: "/plans" },
   { label: "info", href: "/info" },
+  { label: "about", href: "/about" },
 ];
 
 const Header = () => {
