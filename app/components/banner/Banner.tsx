@@ -1,7 +1,6 @@
 'use client'
 
 import bannerImg from "@/app/assets/banner.avif"
-import Plan from "../plans/Plan";
 
 
 const Banner = () => {

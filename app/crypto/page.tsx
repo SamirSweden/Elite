@@ -6,7 +6,6 @@ import Header from "../components/header/Header"
 const Crypto = () => {
     return (
         <>
-            
             <BannerEth />
         </>
     )

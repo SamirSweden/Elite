@@ -15,8 +15,6 @@ const navLinks = [
   },
 ];
 
-const imageEth =
-  "https://ethereum.org/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhero-2xl.e892e79f.png&w=1920&q=20";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,7 +62,7 @@ export default function Navigation() {
                       href={link.href}
                       className="text-white text-xl font-mono capitalize  "
                     >
-                      {link.label}
+                      {link.label} 
                     </Link>
                   </li>
                 ))}
