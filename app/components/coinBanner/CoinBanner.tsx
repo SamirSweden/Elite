@@ -11,7 +11,7 @@ const bannerContent = {
 
 const CoinBanner = () => {
     return <>
-        <section className="banner !py-25 !px-0">
+        <section className="banner !py-25 !px-0 ">
             <div className="container">
                 <div className="flex items-center justify-between max-[768px]:flex-col">
 
@@ -20,7 +20,7 @@ const CoinBanner = () => {
                         <h2 className={'text-5xl max-[520px]:text-2xl text-wrap font-mono'}>{bannerContent.title}</h2>
                         <p className={'text-wrap text-lg font-mono !mb-[30px]'}>{bannerContent.text} <span className={'bg-purple-600 rounded-lg'}>even when the price of ETH changes.</span></p>
                     </div>
-                    <Image src={CoinImg} width={400} height={400} alt="Coin" priority className={'shadow-2xl shadow-white rounded-full '} />
+                    <Image preload={false} src={CoinImg} width={400} height={400} alt="Coin" priority className={'shadow-2xl shadow-white rounded-full '} />
                 </div>
             </div>
         </section>

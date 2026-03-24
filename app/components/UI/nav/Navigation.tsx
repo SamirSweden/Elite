@@ -38,7 +38,7 @@ export default function Navigation() {
               <Bitcoin />
             </Link>
 
-            <ul className="menu  max-[768px]:hidden flex items-center gap-4.5 !py-[10px] !px-[20px] border border-gray-700 bg-gradient-to-br  from-[#000] via-[#222] from-[#222222] rounded-2xl">
+            <ul className="menu  max-[768px]:hidden flex items-center gap-4.5 !py-[10px] !px-[20px] border border-gray-700 bg-transparent backdrop-blur-3xl rounded-2xl">
               {navLinks.map((navlink) => {
                 const isActive = pathname === navlink.href;
 
