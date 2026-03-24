@@ -27,7 +27,7 @@ export default function Navigation() {
 
   return (
     <>
-      <header className="header ">
+      <header className="header z-[70]">
         <div className="container">
           <div className="header__wrap">
             <Link
@@ -38,7 +38,7 @@ export default function Navigation() {
               <Bitcoin />
             </Link>
 
-            <ul className="menu  max-[425px]:hidden flex items-center gap-4.5 !py-[10px] !px-[20px] border border-gray-700 bg-gradient-to-br  from-[#000] via-[#222] from-[#222222] rounded-2xl">
+            <ul className="menu  max-[768px]:hidden flex items-center gap-4.5 !py-[10px] !px-[20px] border border-gray-700 bg-gradient-to-br  from-[#000] via-[#222] from-[#222222] rounded-2xl">
               {navLinks.map((navlink) => {
                 const isActive = pathname === navlink.href;
 
@@ -59,25 +59,33 @@ export default function Navigation() {
 
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden text-white text-2xl z-50"
+              className="md:hidden text-white text-2xl relative z-[80]"
             >
               {isOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
 
-            <div className={`min-[425px]:hidden flex items-center justify-center
-                    flex-col fixed left-0 z-40 backdrop-blur-md bg-transparent transition-transform duration-300 inset-0
+            <div className={`min-[768px]:hidden flex items-center justify-center
+                    flex-col fixed left-0 z-[60] backdrop-blur-md bg-transparent transition-transform duration-300 inset-0
                 ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
-              <ul className="flex flex-col items-center gap-3">
-                {navLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-white text-xl font-mono capitalize  "
-                    >
-                      {link.label} 
-                    </Link>
-                  </li>
-                ))}
+              <ul
+                  onClick={(e) => e.stopPropagation()}
+                  className="flex flex-col items-center gap-3">
+                {navLinks.map((link) => {
+                    const isActive = pathname === link.href
+
+                  return (
+                      <li key={link.href}>
+                        <Link
+                            href={link.href}
+                            className={`${isActive ? "text-white !py-2 !px-4 bg-gradient-to-br from-white via-blue-500 to-red-400 rounded-4xl" :"text-white" }`}
+                            onClick={() => setIsOpen(false)}
+                        >
+                          {link.label}
+                        </Link>
+                      </li>
+                  )
+
+                })}
               </ul>
             </div>
           </div>
