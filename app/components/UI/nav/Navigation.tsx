@@ -13,6 +13,10 @@ const navLinks = [
     label: "prices",
     href: "/buy",
   },
+  {
+    label: "Layer 2",
+    href: "/layer2",
+  },
 ];
 
 

@@ -1,5 +1,4 @@
 import BannerEth from "../components/bannerEth/BannerEth"
-import Header from "../components/header/Header"
 
 
 

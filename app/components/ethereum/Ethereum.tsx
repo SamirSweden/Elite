@@ -1,5 +1,6 @@
 import EthBtn from "@/app/components/UI/btn/EthBtn";
 import Image from "next/image";
+import EthCard from "@/app/components/UI/card/EthCard";
 
 
 const bannerContent = {
@@ -24,6 +25,9 @@ export default  function Ethereum(){
                            <div className="flex items-center w-full">
                                <EthBtn />
                            </div>
+                           <div className={'!mt-7 max-w-150 w-full'}>
+                               <EthCard />
+                           </div>
                        </div>
                         <div className="relative">
                             <Image
@@ -31,7 +35,7 @@ export default  function Ethereum(){
                                 width={400}
                                 height={400}
                                 alt={'ethereum'}
-                                className={'object-contain rounded-2xl '}
+                                className={'object-contain rounded-2xl max-[768px]:hidden'}
                                 priority
                             />
                         </div>
