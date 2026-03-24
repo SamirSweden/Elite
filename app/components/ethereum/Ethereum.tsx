@@ -1,7 +1,7 @@
-import EthBtn from "@/app/components/UI/btn/EthBtn";
+
 import Image from "next/image";
 import EthCard from "@/app/components/UI/card/EthCard";
-
+import EthBtn from "@/app/components/UI/btn/EthBtn";
 
 const bannerContent = {
     title: "What is Ethereum?",

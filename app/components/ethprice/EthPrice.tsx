@@ -17,7 +17,7 @@ export  default function EthPrice (){
     }, []);
 
     return <>
-        <span>{price ? `${price}` :  "loading"}</span>
+        <span className={'text-2xl bg-gradient-to-br max-[520px]:w-full text-center from-pink-700  to-black !py-2 !px-6  rounded-2xl'}>{price ? `${price}` :  "loading"}</span>
     </>
 }
 
