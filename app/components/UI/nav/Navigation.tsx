@@ -3,15 +3,16 @@
 import { Bitcoin, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   {
-    label: "about",
-    href: "/about",
+    label: "crypto",
+    href: "/crypto",
   },
   {
-    label: "prices",
-    href: "/buy",
+    label: "coins",
+    href: "/stablecoins",
   },
   {
     label: "Layer 2",
@@ -21,7 +22,8 @@ const navLinks = [
 
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname()
 
   return (
     <>
@@ -30,23 +32,29 @@ export default function Navigation() {
           <div className="header__wrap">
             <Link
               href={"/"}
-              className="cursor-pointer text-white text-3xl flex items-center gap-1.5"
+              className=" cursor-pointer text-white text-3xl flex items-center gap-1.5"
             >
               <span>Elite</span>
               <Bitcoin />
             </Link>
 
-            <ul className="menu max-[425px]:hidden flex items-center gap-4.5 !py-[10px] !px-[20px] border border-gray-700 bg-gradient-to-br  from-[#000] via-[#222] from-[#222222] rounded-2xl">
-              {navLinks.map((navlink) => (
-                <li key={navlink.href}>
-                  <Link
-                    href={navlink.href}
-                    className="text-white text-xl font-mono capitalize  "
-                  >
-                    {navlink.label}
-                  </Link>
-                </li>
-              ))}
+            <ul className="menu  max-[425px]:hidden flex items-center gap-4.5 !py-[10px] !px-[20px] border border-gray-700 bg-gradient-to-br  from-[#000] via-[#222] from-[#222222] rounded-2xl">
+              {navLinks.map((navlink) => {
+                const isActive = pathname === navlink.href;
+
+                return (
+                    <li key={navlink.href}>
+                      <Link
+                          href={navlink.href}
+                          className={`text-xl font-mono capitalize transition
+            ${isActive ? "rounded-2xl bg-gradient-to-br from-black via-violet-950 to-pink-400 !py-1 !px-4 text-white" : "text-white hover:text-gray-300"}
+          `}
+                      >
+                        {navlink.label}
+                      </Link>
+                    </li>
+                );
+              })}
             </ul>
 
             <button

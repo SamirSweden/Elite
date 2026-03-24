@@ -10,7 +10,7 @@ const bannerEthContent = {
     text: "Beyond its technical role, ETH is open, programmable digital money. It is used for global payments, as collateral for loans, and as a store of value that doesn't rely on any central entity."
 }
 
-
+const bannerImgEth = "https://ethereum.org/_next/static/media/quizzes-hub-hero.fb734f58.png"
 
 export default  function EthBanner(){
     return(
@@ -22,9 +22,14 @@ export default  function EthBanner(){
                         <p className={'max-w-[600px] w-full text-justify text-wrap'}>{bannerEthContent.desc}</p>
                         <hr className={'border border-violet-800 w-[50%] max-[520px]:w-full'} />
                         <p className={'max-w-[600px] w-full text-justify text-wrap'}>{bannerEthContent.text}</p>
-                        <div className={'flex items-center  gap-1 max-[520px]:w-full'}>
-                           <span><DollarSign  size={40} /></span> <EthPrice/>
+                        <div className={'flex    gap-1 max-[520px]:w-full'}>
+                            <span><DollarSign  size={40} /></span>
+                            <div className="flex items-start flex-col ">
+                                 <EthPrice/>
+                                <span className={'text-gray-500 !mt-3'}>Current ETH price (USD)</span>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -34,6 +39,7 @@ export default  function EthBanner(){
                     .banner__eth{
                         padding:100px 0;
                     }
+                    
                 `}
             </style>
         </>

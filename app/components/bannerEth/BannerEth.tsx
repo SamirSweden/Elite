@@ -7,11 +7,13 @@ import EthBanner from "@/app/components/ethereum/EthBanner";
 export default function BannerEth() {
   return (
     <>
-      <Navigation />
-      <Banners />
-      <Greeting />
-        <Ethereum />
-        <EthBanner/>
+        <main className="select-none">
+            <Navigation />
+            <Banners />
+            <Greeting />
+            <Ethereum />
+            <EthBanner/>
+        </main>
     </>
   );
 }

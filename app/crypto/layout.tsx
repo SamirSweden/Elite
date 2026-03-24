@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Elite - Crypto & Eth",
+  title: "Elite - Ethereum",
 };
 
 export default function CryptoLayout({

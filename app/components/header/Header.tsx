@@ -24,7 +24,7 @@ const Header = () => {
       <header className="!bg-transparent header ">
         <div className="container ">
           <div className="flex items-center justify-between  bg-transparent border border-gray-600 rounded-3xl !py-[20px] !px-[40px]">
-            <Link className="flex items-center cursor-pointer" href={"/"}>
+            <Link className="select-none flex items-center cursor-pointer" href={"/"}>
               Elite{" "}
               <span>
                 <Bitcoin size={20} />
