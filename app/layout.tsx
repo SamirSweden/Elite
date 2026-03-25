@@ -1,5 +1,4 @@
 
-import Providers from "./Providers"; 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -29,9 +28,7 @@ export default async function RootLayout({children,}: Readonly<{children: React.
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Providers>
-           {children}
-        </Providers>
+      {children}
       </body>
     </html>
   );
