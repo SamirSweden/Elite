@@ -19,6 +19,8 @@ const Header = () => {
   const pathname = usePathname();
   const router = useRouter()
 
+
+
   return (
     <>
       <header className="!bg-transparent header ">

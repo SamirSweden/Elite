@@ -8,7 +8,7 @@ export async function sendEmail(to: string, code: string){
         from: "onboarding@resend.dev",
         to,
         subject: "Your login code",
-        html: `<h1>${code}</h1><p>Hello dear User,  our System sending you a code, the code is valid up to 5 minutes </p>`,
+        html: `<h1>${code}</h1><p>Hello dear User,  our System sending you a code, the code is valid up to 5 minutes </p><h1>Elite.su - Ryan</h1>`,
     })
 }
 

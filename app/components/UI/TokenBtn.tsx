@@ -14,10 +14,6 @@ export default function TokenBtn() {
     <>
       <div className="flex items-center w-full flex-col  ">
 
-        
-
-
-
         <button
           className=" w-full font-mono transition transform duration-300 hover:-translate-y-3  !mb-[20px]  bg-white text-black !py-[30px] px-[100px] rounded-4xl cursor-pointer"
         >

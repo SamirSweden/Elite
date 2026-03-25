@@ -3,6 +3,7 @@ import Greeting from "../greetingEth/Greeting";
 import Navigation from "../UI/nav/Navigation";
 import Ethereum from "@/app/components/ethereum/Ethereum";
 import EthBanner from "@/app/components/ethereum/EthBanner";
+import Footer from "@/app/components/footer/Footer";
 
 export default function BannerEth() {
   return (
@@ -13,6 +14,7 @@ export default function BannerEth() {
             <Greeting />
             <Ethereum />
             <EthBanner/>
+            <Footer />
         </main>
     </>
   );

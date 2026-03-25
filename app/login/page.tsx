@@ -100,7 +100,7 @@ const LoginPage = () => {
               {step === "code" && (
                   <>
                     <input
-                        placeholder="Enter code"
+                        placeholder="XXX-XXX"
                         value={code}
                         onChange={(e) => setCode(e.target.value)}
                         className="!mb-5 !py-3 !px-5 bg-transparent rounded-2xl w-full outline-none border border-gray-500 text-white"
@@ -111,7 +111,7 @@ const LoginPage = () => {
                         disabled={loading}
                         className="w-full !py-3 rounded-xl bg-green-600 text-white hover:bg-green-400 transition"
                     >
-                      {loading ? "Checking..." : "XXX-XXX"}
+                      {loading ? "Checking..." : "Login"}
                     </button>
                   </>
               )}
