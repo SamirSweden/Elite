@@ -16,7 +16,7 @@ const navLinks = [
   },
   {
     label: "Layer 2",
-    href: "/layer2",
+    href: "/layer-two",
   },
 ];
 
