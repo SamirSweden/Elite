@@ -43,9 +43,9 @@ const TwoButton = () => {
 const WhatsLayerTwo = () => {
     return(
         <>
-            <section className="whats__layer !py-[100px]">
+            <section className="whats__layer !py-[100px] ">
                 <div className="container">
-                    <div className="flex items-center justify-between max-[924px]:flex-col">
+                    <div className="flex items-center justify-between  max-[924px]:flex-col">
                         <div className="max-w-[600px] w-full flex items-start gap-[30px] flex-col">
                             <h2 className={'text-5xl   max-[500px]:text-2xl text-cyan-800 text-wrap font-mono capitalize'}>{whatsLayer.title}</h2>
                             <p className={'text-white text-lg text-justify font-mono text-wrap'}>{whatsLayer.desc}</p>
@@ -63,9 +63,9 @@ const LayerTwo = () => {
     return (
         <>
             <Navigation/>
-            <section className={'layer !py-[100px]'}>
+            <section className={'layer !py-[100px] h-screen '}>
                 <div className="container">
-                    <div className={'flex items-center justify-between max-[924px]:flex-col'}>
+                    <div className={'flex items-center justify-between h-full max-[924px]:flex-col'}>
                         <div className={' w-full'}>
                             <div className="flex items-center gap-2 !mb-7">
                                 <span className={'uppercase text-xl '}>layer2</span>/
@@ -83,7 +83,6 @@ const LayerTwo = () => {
                     <WhatsLayerTwo/>
                 </div>
             </section>
-
 
         </>
     )
