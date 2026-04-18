@@ -14,7 +14,9 @@ export default function PlanLayout({
 }) {
     return (
         <>
-            {children}
+            <main className={'min-h-screen bg-black'}>
+                {children}
+            </main>
         </>
     );
 }
