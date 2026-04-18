@@ -65,7 +65,7 @@ const LayerTwo = () => {
             <Navigation/>
             <section className={'layer !py-[100px] h-screen '}>
                 <div className="container">
-                    <div className={'flex items-center justify-between h-full max-[924px]:flex-col'}>
+                    <div className={'flex items-center justify-between h-full  max-[924px]:flex-col'}>
                         <div className={' w-full'}>
                             <div className="flex items-center gap-2 !mb-7">
                                 <span className={'uppercase text-xl '}>layer2</span>/

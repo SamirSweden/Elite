@@ -1,28 +1,46 @@
-"use client";
+'use client'
 
-import Link from "next/link";
+import { useRouter } from "next/navigation"
+import { useEffect } from "react"
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 
-export default function NotFound() {
-    const router = useRouter()
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            router.push('/');
-        }, 1000)
+const NotFound = () => {
+  const router = useRouter()
 
-        return () => clearInterval(timer)
-    }, [router])
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      router.push('/')
+    },2000)
 
-  return (
-    <>
-      <div className="h-screen flex items-center justify-center bg-black text-white flex-col">
-        <h1 className="text-4xl font-bold">404</h1>
-        <p>Page not found </p>
-        <p className="text-sm opacity-60 mt-2">main page</p>
+    return () => clearInterval(timer)
+
+  },[router])
+
+  return <>
+    <section className="min-h-screen bg-black !py-12 !px-0">
+      <div className="max-w-7xl !mx-auto !px-4 md:px-6 w-full">
+        <div className="flex items-center justify-center flex-col h-full gap-14">
+          <h1 className="text-5xl text-white "> Not found - 404</h1>
+          <button onClick={() => router.push('/')}>
+            Home page
+          </button>
+        </div>
       </div>
-    </>
-  );
+    </section>
+  </>
+
 }
+
+
+
+export default NotFound
+
+
+
+
+
+
+
+
+
