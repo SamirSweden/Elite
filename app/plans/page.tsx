@@ -3,8 +3,6 @@
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Header from "../components/header/Header";
-import Plan from "../components/plans/Plan";
-import Card from "../components/UI/card/Card";
 
 const cards = [
   {
